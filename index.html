@@ -4,18 +4,117 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Forms</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Open+Sans:wght@400;700&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./styles/normalize.css" rel="stylesheet" type="text/css" />
+    <link href="./styles/fonts.css" rel="stylesheet" type="text/css" />
+    <link href="./styles/form.css" rel="stylesheet" type="text/css" />
   </head>
+
   <body>
     <section>
       <form class="account">
-        <h2>Create an account</h2>
+        <h2 class="account-header">Create an account</h2>
 
-        <div class="row">
+        <div class="firstname">
           <label><input name="firstname" type="text" />First Name</label>
+        </div>
+
+        <div class="lastname">
           <label><input name="lastname" type="text" />Last Name</label>
+        </div>
+
+        <div class="account-email">
+          <label><input name="email" type="text" />E-mail</label>
+          <text>We'll never share your email with anyone else.</text>
+        </div>
+
+        <div class="gender">
+          <label><input name="male" type="radio" />Male</label>
+          <label><input name="female" type="radio" />Female</label>
+        </div>
+
+        <div class="account-adress">
+          <label>
+            <select name="country">
+              <option value="ua">Ukraine</option>
+              <option value="ca">Canada</option>
+              <option value="usa">USA</option></select
+            >Country</label
+          ><label><input name="city" type="text" />City</label>
+        </div>
+
+        <div class="account-button">
+          <input type="button" value="Sign up" onclick="msg()" />
+          <text
+            >By clicking the 'Sign Up' button, you confirm that you accept
+            our<br /><a href="" onclick="msg()">Terms of Use</a> and
+            <a href="" onclick="msg()">Privacy Policy</a></text
+          >
+          <text>Have an account? <a href="" onclick="msg()">Log In</a></text>
         </div>
       </form>
     </section>
+
+    <section>
+      <form class="profile">
+        <h2>Profile</h2>
+
+        <div class="row">
+          <img src="./img/Image.png" alt="Photo" />
+
+          <!-- скрываем элемент < input type=”file” />, на его месте показываем < input type=”text” />, который имеет событие onclick -->
+          <input
+            type="file"
+            id="file"
+            name="avatar"
+            accept="image/png, image/jpeg"
+            style="display: none"
+          />
+          <input type="text" id="camera" onclick="openFileDialog('file')" />
+          <input type="button" id="trash" onclick="msg()" />
+          <text>Up to 1 MB (300x300 px)</text>
+        </div>
+
+        <div class="row">
+          <label><input name="name" type="text" />Name</label>
+          <label><input name="email" type="text" />E-mail</label>
+        </div>
+
+        <div class="row">
+          <label>
+            <select name="country">
+              <option value="ua">Ukraine</option>
+              <option value="ca">Canada</option>
+              <option value="usa">USA</option></select
+            >Country</label
+          ><label><input name="city" type="text" />City</label>
+        </div>
+
+        <div class="row">
+          <label><input name="zipcode" type="text" />Zip Code</label>
+          <label><input name="phonenumber" type="text" />Phone Number</label>
+        </div>
+
+        <div class="row">
+          <input type="button" value="Update" onclick="msg()" />
+        </div>
+      </form>
+    </section>
+
+    <script>
+      msg = () => {
+        alert("This is a form created only for training!");
+      };
+      // все клики под текстовому полю перенаправляем на поле выбора файла
+      openFileDialog = (id) => {
+        document.getElementById(id).click();
+      };
+    </script>
   </body>
 </html>
