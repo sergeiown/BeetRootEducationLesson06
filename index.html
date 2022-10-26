@@ -23,17 +23,17 @@
 
         <div class="firstname">
           <label for="firstname">First Name</label>
-          <input name="firstname" type="text" />
+          <input name="firstname" type="text" placeholder=" ..." />
         </div>
 
         <div class="lastname">
           <label for="lastname">Last Name</label>
-          <input name="lastname" type="text" />
+          <input name="lastname" type="text" placeholder=" ..." />
         </div>
 
         <div class="account-email">
           <label for="email">E-mail</label>
-          <input name="email" type="text" />
+          <input name="email" type="text" placeholder=" @" />
           <bottom-text
             >We'll never share your email with anyone else.</bottom-text
           >
@@ -57,7 +57,7 @@
 
         <div class="account-city">
           <label for="city">City</label>
-          <input name="city" type="text" />
+          <input name="city" type="text" placeholder=" ..." />
         </div>
 
         <div class="account-button">
@@ -99,7 +99,12 @@
             accept="image/png, image/jpeg"
             style="display: none"
           />
-          <input type="text" id="camera" onclick="openFileDialog('file')" />
+          <input
+            type="text"
+            id="camera"
+            placeholder=" *.png"
+            onclick="openFileDialog('file')"
+          />
           <bottom-text>Up to 1 MB (300x300 px)</bottom-text>
         </div>
 
@@ -109,12 +114,12 @@
 
         <div class="profile-name">
           <label for="name">Name</label>
-          <input name="name" type="text" />
+          <input name="name" type="text" placeholder=" ..." />
         </div>
 
         <div class="profile-email">
           <label for="email">E-mail</label>
-          <input name="email" type="text" />
+          <input name="email" type="text" placeholder=" @" />
         </div>
 
         <div class="profile-country">
@@ -128,17 +133,17 @@
 
         <div class="profile-city">
           <label for="city">City</label>
-          <input name="city" type="text" />
+          <input name="city" type="text" placeholder=" ..." />
         </div>
 
         <div class="zipcode">
           <label for="zipcode">Zip Code</label>
-          <input name="zipcode" type="text" />
+          <input name="zipcode" type="text" placeholder=" ..." />
         </div>
 
         <div class="phonenumber">
           <label for="phonenumber">Phone Number</label>
-          <input name="phonenumber" type="text" />
+          <input name="phonenumber" type="text" placeholder=" +" />
         </div>
 
         <div class="profile-button">
