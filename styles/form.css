@@ -1,0 +1,44 @@
+body {
+  width: 1440px;
+  height: 700px;
+  background-color: #f7f7f7;
+}
+
+/* Form "Create an account" */
+.account {
+  position: absolute;
+  width: 570px;
+  height: 590px;
+  left: 135px;
+  top: 55px;
+  background-color: #ffffff;
+  border-radius: 6px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.box1 {
+  grid-column: 2 / 4;
+  grid-row: 1;
+}
+
+/* Form "Profile" */
+.profile {
+  position: absolute;
+  width: 570px;
+  height: 590px;
+  left: 735px;
+  top: 55px;
+  background-color: #ffffff;
+  border-radius: 6px;
+}
+
+#camera {
+  background: url(./camera.svg) no-repeat center right;
+}
+
+#trash {
+  background: url(./trash.svg) no-repeat center;
+}
