@@ -22,53 +22,76 @@
         <h2 class="account-header">Create an account</h2>
 
         <div class="firstname">
-          <label><input name="firstname" type="text" />First Name</label>
+          <label for="firstname">First Name</label>
+          <input name="firstname" type="text" />
         </div>
 
         <div class="lastname">
-          <label><input name="lastname" type="text" />Last Name</label>
+          <label for="lastname">Last Name</label>
+          <input name="lastname" type="text" />
         </div>
 
         <div class="account-email">
-          <label><input name="email" type="text" />E-mail</label>
-          <text>We'll never share your email with anyone else.</text>
+          <label for="email">E-mail</label>
+          <input name="email" type="text" />
+          <bottom-text
+            >We'll never share your email with anyone else.</bottom-text
+          >
         </div>
 
         <div class="gender">
-          <label><input name="male" type="radio" />Male</label>
-          <label><input name="female" type="radio" />Female</label>
+          <input name="male" type="radio" onclick="msg()" />
+          <label for="male"> Male &emsp;</label>
+          <input name="female" type="radio" onclick="msg()" />
+          <label for="female">Female</label>
         </div>
 
-        <div class="account-adress">
-          <label>
-            <select name="country">
-              <option value="ua">Ukraine</option>
-              <option value="ca">Canada</option>
-              <option value="usa">USA</option></select
-            >Country</label
-          ><label><input name="city" type="text" />City</label>
+        <div class="account-country">
+          <label for="country">Country</label>
+          <select name="country">
+            <option value="ua">Ukraine</option>
+            <option value="ca">Canada</option>
+            <option value="usa">USA</option>
+          </select>
+        </div>
+
+        <div class="account-city">
+          <label for="city">City</label>
+          <input name="city" type="text" />
         </div>
 
         <div class="account-button">
           <input type="button" value="Sign up" onclick="msg()" />
+        </div>
+
+        <div class="account-button-text">
           <text
-            >By clicking the 'Sign Up' button, you confirm that you accept
-            our<br /><a href="" onclick="msg()">Terms of Use</a> and
-            <a href="" onclick="msg()">Privacy Policy</a></text
+            >By clicking the 'Sign Up' button, you confirm that you accept our
+          </text>
+          <text>
+            <a href="" onclick="msg()">Terms of Use</a> and
+            <a href="" onclick="msg()">Privacy Policy</a><br />
+          </text>
+        </div>
+
+        <div class="account-button-label">
+          <label
+            >Have an account? &emsp;<a href="" onclick="msg()">Log In</a></label
           >
-          <text>Have an account? <a href="" onclick="msg()">Log In</a></text>
         </div>
       </form>
     </section>
 
     <section>
       <form class="profile">
-        <h2>Profile</h2>
+        <h2 class="profile-header">Profile</h2>
 
-        <div class="row">
-          <img src="./img/Image.png" alt="Photo" />
+        <div class="profile-avatar">
+          <img src="./img/Image.png" alt="Avatar" />
+        </div>
 
-          <!-- скрываем элемент < input type=”file” />, на его месте показываем < input type=”text” />, который имеет событие onclick -->
+        <!-- скрываем элемент < input type=”file” />, на его месте показываем < input type=”text” />, который имеет событие onclick -->
+        <div class="profile-file">
           <input
             type="file"
             id="file"
@@ -77,31 +100,48 @@
             style="display: none"
           />
           <input type="text" id="camera" onclick="openFileDialog('file')" />
+          <bottom-text>Up to 1 MB (300x300 px)</bottom-text>
+        </div>
+
+        <div class="profile-trash">
           <input type="button" id="trash" onclick="msg()" />
-          <text>Up to 1 MB (300x300 px)</text>
         </div>
 
-        <div class="row">
-          <label><input name="name" type="text" />Name</label>
-          <label><input name="email" type="text" />E-mail</label>
+        <div class="profile-name">
+          <label for="name">Name</label>
+          <input name="name" type="text" />
         </div>
 
-        <div class="row">
-          <label>
-            <select name="country">
-              <option value="ua">Ukraine</option>
-              <option value="ca">Canada</option>
-              <option value="usa">USA</option></select
-            >Country</label
-          ><label><input name="city" type="text" />City</label>
+        <div class="profile-email">
+          <label for="email">E-mail</label>
+          <input name="email" type="text" />
         </div>
 
-        <div class="row">
-          <label><input name="zipcode" type="text" />Zip Code</label>
-          <label><input name="phonenumber" type="text" />Phone Number</label>
+        <div class="profile-country">
+          <label for="country">Country</label>
+          <select name="country">
+            <option value="ua">Ukraine</option>
+            <option value="ca">Canada</option>
+            <option value="usa">USA</option>
+          </select>
         </div>
 
-        <div class="row">
+        <div class="profile-city">
+          <label for="city">City</label>
+          <input name="city" type="text" />
+        </div>
+
+        <div class="zipcode">
+          <label for="zipcode">Zip Code</label>
+          <input name="zipcode" type="text" />
+        </div>
+
+        <div class="phonenumber">
+          <label for="phonenumber">Phone Number</label>
+          <input name="phonenumber" type="text" />
+        </div>
+
+        <div class="profile-button">
           <input type="button" value="Update" onclick="msg()" />
         </div>
       </form>
