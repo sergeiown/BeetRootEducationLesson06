@@ -1,0 +1,96 @@
+h2 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  color: #1c1c1c;
+}
+
+label {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 30px;
+  letter-spacing: -0.2px;
+  color: #545454;
+}
+
+text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: -0.1px;
+  color: #969696;
+  text-align: center;
+}
+
+bottom-text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: -0.1px;
+  color: #969696;
+}
+
+input[type="button"] {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: -0.1px;
+  color: #ffffff;
+  background: #007bff;
+  border: 1px solid #e4e4e4;
+  border-radius: 6px;
+}
+
+input[type="text"] {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: -0.1px;
+  text-align: left;
+  color: #545454;
+  outline: none;
+  background: #ffffff;
+  border: 1px solid #e4e4e4;
+  border-radius: 6px;
+}
+
+input[type="button"]:focus {
+  border: 1px solid #007bff;
+  border-radius: 6px;
+}
+
+input[type="text"]:focus {
+  border: 1px solid #007bff;
+  border-radius: 6px;
+}
+
+select {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: -0.2px;
+  color: #545454;
+  outline: none;
+  border: 1px solid #e4e4e4;
+  border-radius: 6px;
+}
+
+select:focus {
+  background: #ffffff;
+  border: 1px solid #007bff;
+}
