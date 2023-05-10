@@ -2,13 +2,11 @@
 
 _LMS Beetroot Academy progress_
 
-## ДОМАШНЄ ЗАВДАННЯ
+### TASKS
 
-**Зверстати форму Create an Account**
+**Design the form "Create an Account"**
 
-ТЗ:
-
-- мають бути присутні усі необхідні атрибути
-- поля у фокусі мають підсвічуватись синім
+- all necessary attributes must be present
+- fields in focus should be highlighted in blue
 
 ![image](https://user-images.githubusercontent.com/112722061/222783462-d6128ebb-750e-4e0d-999f-7d6153902820.png)
